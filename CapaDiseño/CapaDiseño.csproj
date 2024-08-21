@@ -176,6 +176,18 @@
     <Compile Include="AltaPrenda.Designer.cs">
       <DependentUpon>AltaPrenda.cs</DependentUpon>
     </Compile>
+    <Compile Include="AltaReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaReportes.Designer.cs">
+      <DependentUpon>AltaReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaTareas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaTareas.Designer.cs">
+      <DependentUpon>AltaTareas.cs</DependentUpon>
+    </Compile>
     <Compile Include="AltaVehiculos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,6 +218,12 @@
     <Compile Include="BajaVehiculo.Designer.cs">
       <DependentUpon>BajaVehiculo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Calendario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendario.Designer.cs">
+      <DependentUpon>Calendario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -229,6 +247,12 @@
     </Compile>
     <Compile Include="ModificarRopero.Designer.cs">
       <DependentUpon>ModificarRopero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarTareas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarTareas.Designer.cs">
+      <DependentUpon>ModificarTareas.cs</DependentUpon>
     </Compile>
     <Compile Include="PlanillaPersonal.cs">
       <SubType>Form</SubType>
@@ -322,6 +346,12 @@
     <EmbeddedResource Include="AltaPrenda.resx">
       <DependentUpon>AltaPrenda.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AltaReportes.resx">
+      <DependentUpon>AltaReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaTareas.resx">
+      <DependentUpon>AltaTareas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AltaVehiculos.resx">
       <DependentUpon>AltaVehiculos.cs</DependentUpon>
     </EmbeddedResource>
@@ -337,6 +367,9 @@
     <EmbeddedResource Include="BajaVehiculo.resx">
       <DependentUpon>BajaVehiculo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Calendario.resx">
+      <DependentUpon>Calendario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -348,6 +381,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ModificarRopero.resx">
       <DependentUpon>ModificarRopero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarTareas.resx">
+      <DependentUpon>ModificarTareas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PlanillaInventario.resx">
       <DependentUpon>PlanillaInventario.cs</DependentUpon>

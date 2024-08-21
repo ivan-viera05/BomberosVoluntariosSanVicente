@@ -29,6 +29,7 @@ namespace CapaDiseño
             panelRoperia.Visible = false;
             panelInventario.Visible = false;
             panelPersonal.Visible = false;
+            panelBomberos.Visible = false;
         }
         public void SetJerarquia(string jerarquia)
         {
@@ -50,6 +51,22 @@ namespace CapaDiseño
                 btnPersonal.Visible = false;
                 btnCapacitaciones.Visible = false;
                 panelCapacitacion.Visible = false;
+            }
+            else if (jerarquia == "Bombero Voluntario")
+            {
+                panelLibroSubmenu.Visible = false;
+                panelCapacitacion.Visible = false;
+                panelClientes.Visible = false;
+                panelInventario.Visible= false;
+                panelRemito.Visible = false;
+                panelRoperia.Visible = false;
+                btnEdificio.Visible = false;
+                btnTaller.Visible = false;
+                btnCapacitaciones.Visible = false;
+                btnboleta.Visible = false;
+                btnInventario.Visible = false;
+                btnPersonal.Visible = false;
+                btnRoperia.Visible = false;
             }
             // Añadir más condiciones para otras jerarquías si es necesario
         }
@@ -90,6 +107,11 @@ namespace CapaDiseño
             {
                 panelPersonal.Visible = false;
                 btnPersonal.Image = Properties.Resources.apuntar_hacia_abajo; // Cambiar a flecha hacia abajo
+            }
+            if (panelBomberos.Visible)
+            {
+                panelBomberos.Visible = false;
+                btnTareas.Image = Properties.Resources.apuntar_hacia_abajo; // Cambiar a flecha hacia abajo
             }
 
         }
@@ -347,6 +369,36 @@ namespace CapaDiseño
         private void label1_Resize(object sender, EventArgs e)
         {
             CenterControls();
+        }
+
+        private void btnAltaTareas_Click(object sender, EventArgs e)
+        {
+            openChildForm(new AltaTareas());
+        }
+
+        private void btnReporteIncidencias_Click(object sender, EventArgs e)
+        {
+            openChildForm(new AltaReportes());
+        }
+
+        private void BtnCalendario_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Calendario());
+        }
+
+        private void button2_Click_2(object sender, EventArgs e)
+        {
+            showSubMenu(panelBomberos, btnTareas, Properties.Resources.punta_de_flecha_hacia_arriba, Properties.Resources.apuntar_hacia_abajo);
+        }
+
+        private void btnModificarTareas_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ModificarTareas() );
+        }
+
+        private void button2_Click_3(object sender, EventArgs e)
+        {
+            openChildForm(new ModificarTareas());
         }
     }
 }

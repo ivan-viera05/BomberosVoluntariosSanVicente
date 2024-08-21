@@ -200,6 +200,7 @@
             this.listBoxBomberos.Name = "listBoxBomberos";
             this.listBoxBomberos.Size = new System.Drawing.Size(289, 84);
             this.listBoxBomberos.TabIndex = 59;
+            this.listBoxBomberos.SelectedIndexChanged += new System.EventHandler(this.listBoxBomberos_SelectedIndexChanged);
             // 
             // dtpFechaHoraSalida
             // 

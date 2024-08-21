@@ -29,35 +29,46 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnClose = new System.Windows.Forms.Button();
             this.panelSideMenu = new System.Windows.Forms.Panel();
+            this.panelBomberos = new System.Windows.Forms.Panel();
+            this.btnReporteIncidencias = new System.Windows.Forms.Button();
+            this.btnAltaTareas = new System.Windows.Forms.Button();
+            this.btnTareas = new System.Windows.Forms.Button();
             this.panelPersonal = new System.Windows.Forms.Panel();
             this.btnModificarPersonal = new System.Windows.Forms.Button();
             this.btnBajaPersonal = new System.Windows.Forms.Button();
             this.btnAgregarPersonal = new System.Windows.Forms.Button();
             this.btnConsultarPersonal = new System.Windows.Forms.Button();
+            this.btnPersonal = new System.Windows.Forms.Button();
             this.panelInventario = new System.Windows.Forms.Panel();
             this.btnModificarHerramienta = new System.Windows.Forms.Button();
             this.btnBajaHerramienta = new System.Windows.Forms.Button();
             this.btnAgregarHerramienta = new System.Windows.Forms.Button();
             this.btnConsultaInventario = new System.Windows.Forms.Button();
+            this.btnInventario = new System.Windows.Forms.Button();
             this.panelRoperia = new System.Windows.Forms.Panel();
             this.btnModificarPrenda = new System.Windows.Forms.Button();
             this.btnBajaPrenda = new System.Windows.Forms.Button();
             this.btnAgregarRopero = new System.Windows.Forms.Button();
             this.btnConsultasRopero = new System.Windows.Forms.Button();
+            this.btnRoperia = new System.Windows.Forms.Button();
             this.panelRemito = new System.Windows.Forms.Panel();
             this.btnInspeccionarVenta = new System.Windows.Forms.Button();
             this.btnCrearVenta = new System.Windows.Forms.Button();
+            this.btnboleta = new System.Windows.Forms.Button();
             this.panelCapacitacion = new System.Windows.Forms.Panel();
             this.btnModificarProveedores = new System.Windows.Forms.Button();
             this.btnAgregarProveedor = new System.Windows.Forms.Button();
             this.btnConsultarProveedores = new System.Windows.Forms.Button();
+            this.btnCapacitaciones = new System.Windows.Forms.Button();
             this.panelClientes = new System.Windows.Forms.Panel();
             this.btnReparacionVehiculo = new System.Windows.Forms.Button();
             this.btnBajaVehiculo = new System.Windows.Forms.Button();
             this.btnModificarVehiculo = new System.Windows.Forms.Button();
             this.btnAgregarVehiculo = new System.Windows.Forms.Button();
             this.btnConsultaTaller = new System.Windows.Forms.Button();
+            this.btnTaller = new System.Windows.Forms.Button();
             this.panelLibroSubmenu = new System.Windows.Forms.Panel();
             this.btnConsultaRopero = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -66,19 +77,14 @@
             this.btnConsultarActas = new System.Windows.Forms.Button();
             this.btnAltasEdificio = new System.Windows.Forms.Button();
             this.btnConsultasEdificio = new System.Windows.Forms.Button();
+            this.btnEdificio = new System.Windows.Forms.Button();
             this.panelForms = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnPersonal = new System.Windows.Forms.Button();
-            this.btnInventario = new System.Windows.Forms.Button();
-            this.btnRoperia = new System.Windows.Forms.Button();
-            this.btnboleta = new System.Windows.Forms.Button();
-            this.btnCapacitaciones = new System.Windows.Forms.Button();
-            this.btnTaller = new System.Windows.Forms.Button();
-            this.btnEdificio = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panelSideMenu.SuspendLayout();
+            this.panelBomberos.SuspendLayout();
             this.panelPersonal.SuspendLayout();
             this.panelInventario.SuspendLayout();
             this.panelRoperia.SuspendLayout();
@@ -100,10 +106,26 @@
             this.panel1.Size = new System.Drawing.Size(1155, 42);
             this.panel1.TabIndex = 18;
             // 
+            // btnClose
+            // 
+            this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.ForeColor = System.Drawing.Color.Transparent;
+            this.btnClose.Image = global::CapaDiseño.Properties.Resources.Icono_cerrar_FN;
+            this.btnClose.Location = new System.Drawing.Point(1106, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(49, 42);
+            this.btnClose.TabIndex = 9;
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // panelSideMenu
             // 
             this.panelSideMenu.AutoScroll = true;
             this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.panelSideMenu.Controls.Add(this.panelBomberos);
+            this.panelSideMenu.Controls.Add(this.btnTareas);
             this.panelSideMenu.Controls.Add(this.panelPersonal);
             this.panelSideMenu.Controls.Add(this.btnPersonal);
             this.panelSideMenu.Controls.Add(this.panelInventario);
@@ -123,6 +145,71 @@
             this.panelSideMenu.Name = "panelSideMenu";
             this.panelSideMenu.Size = new System.Drawing.Size(334, 785);
             this.panelSideMenu.TabIndex = 19;
+            // 
+            // panelBomberos
+            // 
+            this.panelBomberos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.panelBomberos.Controls.Add(this.button2);
+            this.panelBomberos.Controls.Add(this.btnReporteIncidencias);
+            this.panelBomberos.Controls.Add(this.btnAltaTareas);
+            this.panelBomberos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelBomberos.Location = new System.Drawing.Point(0, 1829);
+            this.panelBomberos.Name = "panelBomberos";
+            this.panelBomberos.Size = new System.Drawing.Size(313, 266);
+            this.panelBomberos.TabIndex = 16;
+            // 
+            // btnReporteIncidencias
+            // 
+            this.btnReporteIncidencias.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnReporteIncidencias.FlatAppearance.BorderSize = 0;
+            this.btnReporteIncidencias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReporteIncidencias.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReporteIncidencias.ForeColor = System.Drawing.Color.LightGray;
+            this.btnReporteIncidencias.Location = new System.Drawing.Point(0, 48);
+            this.btnReporteIncidencias.Name = "btnReporteIncidencias";
+            this.btnReporteIncidencias.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnReporteIncidencias.Size = new System.Drawing.Size(313, 47);
+            this.btnReporteIncidencias.TabIndex = 1;
+            this.btnReporteIncidencias.Text = "Reporte Incidencias";
+            this.btnReporteIncidencias.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReporteIncidencias.UseVisualStyleBackColor = true;
+            this.btnReporteIncidencias.Click += new System.EventHandler(this.btnReporteIncidencias_Click);
+            // 
+            // btnAltaTareas
+            // 
+            this.btnAltaTareas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAltaTareas.FlatAppearance.BorderSize = 0;
+            this.btnAltaTareas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAltaTareas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAltaTareas.ForeColor = System.Drawing.Color.LightGray;
+            this.btnAltaTareas.Location = new System.Drawing.Point(0, 0);
+            this.btnAltaTareas.Name = "btnAltaTareas";
+            this.btnAltaTareas.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnAltaTareas.Size = new System.Drawing.Size(313, 48);
+            this.btnAltaTareas.TabIndex = 0;
+            this.btnAltaTareas.Text = "Agregar Tareas";
+            this.btnAltaTareas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAltaTareas.UseVisualStyleBackColor = true;
+            this.btnAltaTareas.Click += new System.EventHandler(this.btnAltaTareas_Click);
+            // 
+            // btnTareas
+            // 
+            this.btnTareas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTareas.FlatAppearance.BorderSize = 0;
+            this.btnTareas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTareas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTareas.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnTareas.Image = global::CapaDiseño.Properties.Resources.apuntar_hacia_abajo;
+            this.btnTareas.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTareas.Location = new System.Drawing.Point(0, 1774);
+            this.btnTareas.Name = "btnTareas";
+            this.btnTareas.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnTareas.Size = new System.Drawing.Size(313, 55);
+            this.btnTareas.TabIndex = 15;
+            this.btnTareas.Text = "Tareas";
+            this.btnTareas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTareas.UseVisualStyleBackColor = true;
+            this.btnTareas.Click += new System.EventHandler(this.button2_Click_2);
             // 
             // panelPersonal
             // 
@@ -205,6 +292,25 @@
             this.btnConsultarPersonal.UseVisualStyleBackColor = true;
             this.btnConsultarPersonal.Click += new System.EventHandler(this.btnConsultarPersonal_Click);
             // 
+            // btnPersonal
+            // 
+            this.btnPersonal.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPersonal.FlatAppearance.BorderSize = 0;
+            this.btnPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPersonal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPersonal.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnPersonal.Image = global::CapaDiseño.Properties.Resources.apuntar_hacia_abajo;
+            this.btnPersonal.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPersonal.Location = new System.Drawing.Point(0, 1535);
+            this.btnPersonal.Name = "btnPersonal";
+            this.btnPersonal.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnPersonal.Size = new System.Drawing.Size(313, 55);
+            this.btnPersonal.TabIndex = 13;
+            this.btnPersonal.Text = "Personal";
+            this.btnPersonal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPersonal.UseVisualStyleBackColor = true;
+            this.btnPersonal.Click += new System.EventHandler(this.button5_Click);
+            // 
             // panelInventario
             // 
             this.panelInventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
@@ -285,6 +391,25 @@
             this.btnConsultaInventario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConsultaInventario.UseVisualStyleBackColor = true;
             this.btnConsultaInventario.Click += new System.EventHandler(this.btnConsultaInventario_Click);
+            // 
+            // btnInventario
+            // 
+            this.btnInventario.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnInventario.FlatAppearance.BorderSize = 0;
+            this.btnInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInventario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInventario.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnInventario.Image = global::CapaDiseño.Properties.Resources.apuntar_hacia_abajo;
+            this.btnInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnInventario.Location = new System.Drawing.Point(0, 1279);
+            this.btnInventario.Name = "btnInventario";
+            this.btnInventario.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnInventario.Size = new System.Drawing.Size(313, 55);
+            this.btnInventario.TabIndex = 11;
+            this.btnInventario.Text = "Inventario";
+            this.btnInventario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInventario.UseVisualStyleBackColor = true;
+            this.btnInventario.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // panelRoperia
             // 
@@ -368,6 +493,25 @@
             this.btnConsultasRopero.UseVisualStyleBackColor = true;
             this.btnConsultasRopero.Click += new System.EventHandler(this.btnConsultasRopero_Click);
             // 
+            // btnRoperia
+            // 
+            this.btnRoperia.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRoperia.FlatAppearance.BorderSize = 0;
+            this.btnRoperia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRoperia.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRoperia.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnRoperia.Image = global::CapaDiseño.Properties.Resources.apuntar_hacia_abajo;
+            this.btnRoperia.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRoperia.Location = new System.Drawing.Point(0, 1024);
+            this.btnRoperia.Name = "btnRoperia";
+            this.btnRoperia.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnRoperia.Size = new System.Drawing.Size(313, 55);
+            this.btnRoperia.TabIndex = 9;
+            this.btnRoperia.Text = "Roperia";
+            this.btnRoperia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRoperia.UseVisualStyleBackColor = true;
+            this.btnRoperia.Click += new System.EventHandler(this.button2_Click);
+            // 
             // panelRemito
             // 
             this.panelRemito.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
@@ -410,6 +554,25 @@
             this.btnCrearVenta.Text = "Crear Venta";
             this.btnCrearVenta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCrearVenta.UseVisualStyleBackColor = true;
+            // 
+            // btnboleta
+            // 
+            this.btnboleta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnboleta.FlatAppearance.BorderSize = 0;
+            this.btnboleta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnboleta.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnboleta.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnboleta.Image = global::CapaDiseño.Properties.Resources.apuntar_hacia_abajo;
+            this.btnboleta.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnboleta.Location = new System.Drawing.Point(0, 858);
+            this.btnboleta.Name = "btnboleta";
+            this.btnboleta.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnboleta.Size = new System.Drawing.Size(313, 68);
+            this.btnboleta.TabIndex = 7;
+            this.btnboleta.Text = "Furrieles";
+            this.btnboleta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnboleta.UseVisualStyleBackColor = true;
+            this.btnboleta.Click += new System.EventHandler(this.btnboleta_Click);
             // 
             // panelCapacitacion
             // 
@@ -470,6 +633,25 @@
             this.btnConsultarProveedores.Text = "Consultar";
             this.btnConsultarProveedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConsultarProveedores.UseVisualStyleBackColor = true;
+            // 
+            // btnCapacitaciones
+            // 
+            this.btnCapacitaciones.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCapacitaciones.FlatAppearance.BorderSize = 0;
+            this.btnCapacitaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCapacitaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCapacitaciones.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnCapacitaciones.Image = global::CapaDiseño.Properties.Resources.apuntar_hacia_abajo;
+            this.btnCapacitaciones.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCapacitaciones.Location = new System.Drawing.Point(0, 658);
+            this.btnCapacitaciones.Name = "btnCapacitaciones";
+            this.btnCapacitaciones.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnCapacitaciones.Size = new System.Drawing.Size(313, 69);
+            this.btnCapacitaciones.TabIndex = 5;
+            this.btnCapacitaciones.Text = "Capacitacion";
+            this.btnCapacitaciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCapacitaciones.UseVisualStyleBackColor = true;
+            this.btnCapacitaciones.Click += new System.EventHandler(this.btnProveedores_Click);
             // 
             // panelClientes
             // 
@@ -569,6 +751,25 @@
             this.btnConsultaTaller.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConsultaTaller.UseVisualStyleBackColor = true;
             this.btnConsultaTaller.Click += new System.EventHandler(this.btnConsultaTaller_Click);
+            // 
+            // btnTaller
+            // 
+            this.btnTaller.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTaller.FlatAppearance.BorderSize = 0;
+            this.btnTaller.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTaller.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaller.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnTaller.Image = global::CapaDiseño.Properties.Resources.apuntar_hacia_abajo;
+            this.btnTaller.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTaller.Location = new System.Drawing.Point(0, 356);
+            this.btnTaller.Name = "btnTaller";
+            this.btnTaller.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnTaller.Size = new System.Drawing.Size(313, 63);
+            this.btnTaller.TabIndex = 3;
+            this.btnTaller.Text = "Taller";
+            this.btnTaller.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTaller.UseVisualStyleBackColor = true;
+            this.btnTaller.Click += new System.EventHandler(this.btnClientes_Click);
             // 
             // panelLibroSubmenu
             // 
@@ -705,6 +906,25 @@
             this.btnConsultasEdificio.UseVisualStyleBackColor = true;
             this.btnConsultasEdificio.Click += new System.EventHandler(this.btnConsultasEdificio_Click);
             // 
+            // btnEdificio
+            // 
+            this.btnEdificio.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEdificio.FlatAppearance.BorderSize = 0;
+            this.btnEdificio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEdificio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdificio.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnEdificio.Image = global::CapaDiseño.Properties.Resources.apuntar_hacia_abajo;
+            this.btnEdificio.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEdificio.Location = new System.Drawing.Point(0, 0);
+            this.btnEdificio.Name = "btnEdificio";
+            this.btnEdificio.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnEdificio.Size = new System.Drawing.Size(313, 58);
+            this.btnEdificio.TabIndex = 1;
+            this.btnEdificio.Text = "Edificio";
+            this.btnEdificio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEdificio.UseVisualStyleBackColor = true;
+            this.btnEdificio.Click += new System.EventHandler(this.btnLibros_Click);
+            // 
             // panelForms
             // 
             this.panelForms.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -747,152 +967,22 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // btnPersonal
+            // button2
             // 
-            this.btnPersonal.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPersonal.FlatAppearance.BorderSize = 0;
-            this.btnPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPersonal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPersonal.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnPersonal.Image = global::CapaDiseño.Properties.Resources.apuntar_hacia_abajo;
-            this.btnPersonal.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPersonal.Location = new System.Drawing.Point(0, 1535);
-            this.btnPersonal.Name = "btnPersonal";
-            this.btnPersonal.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnPersonal.Size = new System.Drawing.Size(313, 55);
-            this.btnPersonal.TabIndex = 13;
-            this.btnPersonal.Text = "Personal";
-            this.btnPersonal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPersonal.UseVisualStyleBackColor = true;
-            this.btnPersonal.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // btnInventario
-            // 
-            this.btnInventario.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnInventario.FlatAppearance.BorderSize = 0;
-            this.btnInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInventario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInventario.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnInventario.Image = global::CapaDiseño.Properties.Resources.apuntar_hacia_abajo;
-            this.btnInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnInventario.Location = new System.Drawing.Point(0, 1279);
-            this.btnInventario.Name = "btnInventario";
-            this.btnInventario.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnInventario.Size = new System.Drawing.Size(313, 55);
-            this.btnInventario.TabIndex = 11;
-            this.btnInventario.Text = "Inventario";
-            this.btnInventario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInventario.UseVisualStyleBackColor = true;
-            this.btnInventario.Click += new System.EventHandler(this.button2_Click_1);
-            // 
-            // btnRoperia
-            // 
-            this.btnRoperia.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnRoperia.FlatAppearance.BorderSize = 0;
-            this.btnRoperia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRoperia.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRoperia.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnRoperia.Image = global::CapaDiseño.Properties.Resources.apuntar_hacia_abajo;
-            this.btnRoperia.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRoperia.Location = new System.Drawing.Point(0, 1024);
-            this.btnRoperia.Name = "btnRoperia";
-            this.btnRoperia.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnRoperia.Size = new System.Drawing.Size(313, 55);
-            this.btnRoperia.TabIndex = 9;
-            this.btnRoperia.Text = "Roperia";
-            this.btnRoperia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRoperia.UseVisualStyleBackColor = true;
-            this.btnRoperia.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // btnboleta
-            // 
-            this.btnboleta.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnboleta.FlatAppearance.BorderSize = 0;
-            this.btnboleta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnboleta.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnboleta.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnboleta.Image = global::CapaDiseño.Properties.Resources.apuntar_hacia_abajo;
-            this.btnboleta.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnboleta.Location = new System.Drawing.Point(0, 858);
-            this.btnboleta.Name = "btnboleta";
-            this.btnboleta.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnboleta.Size = new System.Drawing.Size(313, 68);
-            this.btnboleta.TabIndex = 7;
-            this.btnboleta.Text = "Furrieles";
-            this.btnboleta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnboleta.UseVisualStyleBackColor = true;
-            this.btnboleta.Click += new System.EventHandler(this.btnboleta_Click);
-            // 
-            // btnCapacitaciones
-            // 
-            this.btnCapacitaciones.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCapacitaciones.FlatAppearance.BorderSize = 0;
-            this.btnCapacitaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCapacitaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCapacitaciones.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnCapacitaciones.Image = global::CapaDiseño.Properties.Resources.apuntar_hacia_abajo;
-            this.btnCapacitaciones.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCapacitaciones.Location = new System.Drawing.Point(0, 658);
-            this.btnCapacitaciones.Name = "btnCapacitaciones";
-            this.btnCapacitaciones.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnCapacitaciones.Size = new System.Drawing.Size(313, 69);
-            this.btnCapacitaciones.TabIndex = 5;
-            this.btnCapacitaciones.Text = "Capacitacion";
-            this.btnCapacitaciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCapacitaciones.UseVisualStyleBackColor = true;
-            this.btnCapacitaciones.Click += new System.EventHandler(this.btnProveedores_Click);
-            // 
-            // btnTaller
-            // 
-            this.btnTaller.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTaller.FlatAppearance.BorderSize = 0;
-            this.btnTaller.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTaller.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTaller.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnTaller.Image = global::CapaDiseño.Properties.Resources.apuntar_hacia_abajo;
-            this.btnTaller.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnTaller.Location = new System.Drawing.Point(0, 356);
-            this.btnTaller.Name = "btnTaller";
-            this.btnTaller.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnTaller.Size = new System.Drawing.Size(313, 63);
-            this.btnTaller.TabIndex = 3;
-            this.btnTaller.Text = "Taller";
-            this.btnTaller.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTaller.UseVisualStyleBackColor = true;
-            this.btnTaller.Click += new System.EventHandler(this.btnClientes_Click);
-            // 
-            // btnEdificio
-            // 
-            this.btnEdificio.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnEdificio.FlatAppearance.BorderSize = 0;
-            this.btnEdificio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEdificio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdificio.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnEdificio.Image = global::CapaDiseño.Properties.Resources.apuntar_hacia_abajo;
-            this.btnEdificio.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEdificio.Location = new System.Drawing.Point(0, 0);
-            this.btnEdificio.Name = "btnEdificio";
-            this.btnEdificio.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnEdificio.Size = new System.Drawing.Size(313, 58);
-            this.btnEdificio.TabIndex = 1;
-            this.btnEdificio.Text = "Edificio";
-            this.btnEdificio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEdificio.UseVisualStyleBackColor = true;
-            this.btnEdificio.Click += new System.EventHandler(this.btnLibros_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.ForeColor = System.Drawing.Color.Transparent;
-            this.btnClose.Image = global::CapaDiseño.Properties.Resources.Icono_cerrar_FN;
-            this.btnClose.Location = new System.Drawing.Point(1106, 0);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(49, 42);
-            this.btnClose.TabIndex = 9;
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.LightGray;
+            this.button2.Location = new System.Drawing.Point(0, 95);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.button2.Size = new System.Drawing.Size(313, 47);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Modificar Tareas";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_3);
             // 
             // Administracion
             // 
@@ -908,6 +998,7 @@
             this.Load += new System.EventHandler(this.Administracion_Load);
             this.panel1.ResumeLayout(false);
             this.panelSideMenu.ResumeLayout(false);
+            this.panelBomberos.ResumeLayout(false);
             this.panelPersonal.ResumeLayout(false);
             this.panelInventario.ResumeLayout(false);
             this.panelRoperia.ResumeLayout(false);
@@ -973,5 +1064,10 @@
         private System.Windows.Forms.Button btnModificarPrenda;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnTareas;
+        private System.Windows.Forms.Panel panelBomberos;
+        private System.Windows.Forms.Button btnReporteIncidencias;
+        private System.Windows.Forms.Button btnAltaTareas;
+        private System.Windows.Forms.Button button2;
     }
 }

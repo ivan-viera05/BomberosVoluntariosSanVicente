@@ -132,6 +132,8 @@
     <Compile Include="DatoPersonal.cs" />
     <Compile Include="DatosAsistencias.cs" />
     <Compile Include="DatosEmergencia.cs" />
+    <Compile Include="datosReporte.cs" />
+    <Compile Include="DatosTareas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

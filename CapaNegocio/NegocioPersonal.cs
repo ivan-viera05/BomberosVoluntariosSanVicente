@@ -23,6 +23,16 @@ namespace CapaNegocio
             // Lógica para obtener la jerarquía desde la base de datos
             return datos.ObtenerJerarquiaPorDni(dni);
         }
+        public bool AgregarPersonal(string nombre, string apellido, string sexo, string jerarquia, int codigoPersona, int telefono, string direccion, string estado, string email, string especialidad, string dni)
+        {
+            // Validaciones de negocio
+            if (string.IsNullOrEmpty(nombre) || string.IsNullOrEmpty(apellido))
+            {
+                throw new Exception("El nombre y apellido son obligatorios");
+            }
 
+            // Llamar a la capa de datos
+            return datos.AgregarPersonal(nombre, apellido, sexo, jerarquia, codigoPersona, telefono, direccion, estado, email, especialidad, dni);
+        }
     }
 }

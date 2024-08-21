@@ -93,5 +93,10 @@ namespace CapaDiseño
 
             txtCodigoBombero.Clear();
         }
+
+        private void listBoxBomberos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
