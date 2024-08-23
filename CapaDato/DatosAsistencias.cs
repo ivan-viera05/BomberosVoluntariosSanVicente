@@ -65,9 +65,7 @@ namespace CapaDato
             using (SqlConnection conexion = Conexion.conectar())
             {
                 string sql = @"
-                SELECT *
-                FROM AsistenciaDiaria
-                WHERE CONVERT(date, Hora_Entrada) = @Fecha";
+                SELECT * FROM AsistenciaDiaria WHERE CONVERT(date, Hora_Entrada) = @Fecha";
 
                 using (SqlCommand cmd = new SqlCommand(sql, conexion))
                 {

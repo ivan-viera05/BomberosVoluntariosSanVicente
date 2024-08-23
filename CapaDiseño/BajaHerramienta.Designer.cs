@@ -50,7 +50,7 @@
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(657, 182);
             this.button2.Name = "button2";
@@ -63,9 +63,9 @@
             // 
             this.btnIngreso.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnIngreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(63)))), ((int)(((byte)(95)))));
-            this.btnIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIngreso.ForeColor = System.Drawing.Color.White;
-            this.btnIngreso.Location = new System.Drawing.Point(657, 224);
+            this.btnIngreso.Location = new System.Drawing.Point(657, 243);
             this.btnIngreso.Name = "btnIngreso";
             this.btnIngreso.Size = new System.Drawing.Size(153, 37);
             this.btnIngreso.TabIndex = 87;
@@ -74,14 +74,14 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(224, 239);
+            this.textBox2.Location = new System.Drawing.Point(274, 258);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(219, 22);
             this.textBox2.TabIndex = 78;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(224, 197);
+            this.textBox1.Location = new System.Drawing.Point(274, 199);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(219, 22);
             this.textBox1.TabIndex = 77;
@@ -89,22 +89,22 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(15, 239);
+            this.label6.Location = new System.Drawing.Point(15, 254);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(203, 20);
+            this.label6.Size = new System.Drawing.Size(233, 25);
             this.label6.TabIndex = 72;
             this.label6.Text = "Nombre  De Herramienta:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(21, 199);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(201, 20);
+            this.label7.Size = new System.Drawing.Size(290, 31);
             this.label7.TabIndex = 71;
             this.label7.Text = "Codigo De Herramienta  :";
             // 
@@ -116,11 +116,11 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(320, 116);
+            this.label3.Location = new System.Drawing.Point(328, 110);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(330, 29);
+            this.label3.Size = new System.Drawing.Size(266, 29);
             this.label3.TabIndex = 70;
-            this.label3.Text = "PLANILLA DE INVENTARIO";
+            this.label3.Text = "BAJA HERRAMIENTA";
             // 
             // label2
             // 
@@ -196,7 +196,7 @@
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(793, 338);
+            this.dataGridView1.Size = new System.Drawing.Size(793, 386);
             this.dataGridView1.TabIndex = 90;
             // 
             // BajaHerramienta

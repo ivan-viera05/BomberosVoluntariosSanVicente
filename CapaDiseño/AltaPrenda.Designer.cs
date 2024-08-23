@@ -30,24 +30,25 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.txtModelo = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCodigoBombero = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaAdquisicion = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.rbSi = new System.Windows.Forms.RadioButton();
+            this.cbMaterialPrincipal = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cbTalla = new System.Windows.Forms.ComboBox();
             this.btnIngreso = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cbEstado = new System.Windows.Forms.ComboBox();
+            this.txtMarca = new System.Windows.Forms.TextBox();
+            this.cbxTipoPrenda = new System.Windows.Forms.ComboBox();
+            this.txtCodigoPrenda = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -58,7 +59,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnClose = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -84,63 +84,78 @@
             this.label1.Size = new System.Drawing.Size(0, 25);
             this.label1.TabIndex = 22;
             // 
-            // textBox3
+            // btnClose
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.ForeColor = System.Drawing.Color.Transparent;
+            this.btnClose.Image = global::CapaDiseño.Properties.Resources.Icono_cerrar_FN;
+            this.btnClose.Location = new System.Drawing.Point(773, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(49, 49);
+            this.btnClose.TabIndex = 9;
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // txtModelo
+            // 
+            this.txtModelo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Location = new System.Drawing.Point(89, 422);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(131, 22);
-            this.textBox3.TabIndex = 117;
+            this.txtModelo.Location = new System.Drawing.Point(112, 440);
+            this.txtModelo.Name = "txtModelo";
+            this.txtModelo.Size = new System.Drawing.Size(241, 22);
+            this.txtModelo.TabIndex = 117;
             // 
             // label14
             // 
             this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(17, 422);
+            this.label14.Location = new System.Drawing.Point(11, 440);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(73, 20);
+            this.label14.Size = new System.Drawing.Size(88, 25);
             this.label14.TabIndex = 116;
             this.label14.Text = "Modelo :";
             // 
-            // textBox2
+            // txtCodigoBombero
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(673, 280);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(134, 22);
-            this.textBox2.TabIndex = 115;
+            this.txtCodigoBombero.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCodigoBombero.Location = new System.Drawing.Point(578, 307);
+            this.txtCodigoBombero.Name = "txtCodigoBombero";
+            this.txtCodigoBombero.Size = new System.Drawing.Size(176, 22);
+            this.txtCodigoBombero.TabIndex = 115;
             // 
             // label13
             // 
             this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(526, 280);
+            this.label13.Location = new System.Drawing.Point(389, 302);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(144, 20);
+            this.label13.Size = new System.Drawing.Size(170, 25);
             this.label13.TabIndex = 114;
             this.label13.Text = "Codigo Bombero :";
             // 
-            // dateTimePicker1
+            // dtpFechaAdquisicion
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(204, 369);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(264, 22);
-            this.dateTimePicker1.TabIndex = 113;
+            this.dtpFechaAdquisicion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFechaAdquisicion.Location = new System.Drawing.Point(255, 577);
+            this.dtpFechaAdquisicion.Name = "dtpFechaAdquisicion";
+            this.dtpFechaAdquisicion.Size = new System.Drawing.Size(512, 27);
+            this.dtpFechaAdquisicion.TabIndex = 113;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(15, 371);
+            this.label9.Location = new System.Drawing.Point(15, 574);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(183, 20);
+            this.label9.Size = new System.Drawing.Size(214, 25);
             this.label9.TabIndex = 112;
             this.label9.Text = "Fecha De Adquisición :";
             // 
@@ -150,7 +165,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton2.AutoSize = true;
             this.radioButton2.ForeColor = System.Drawing.Color.White;
-            this.radioButton2.Location = new System.Drawing.Point(609, 327);
+            this.radioButton2.Location = new System.Drawing.Point(708, 372);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(46, 20);
             this.radioButton2.TabIndex = 111;
@@ -158,41 +173,50 @@
             this.radioButton2.Text = "No";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rbSi
             // 
-            this.radioButton1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.rbSi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.ForeColor = System.Drawing.Color.White;
-            this.radioButton1.Location = new System.Drawing.Point(563, 326);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(40, 20);
-            this.radioButton1.TabIndex = 110;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Si";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbSi.AutoSize = true;
+            this.rbSi.ForeColor = System.Drawing.Color.White;
+            this.rbSi.Location = new System.Drawing.Point(618, 372);
+            this.rbSi.Name = "rbSi";
+            this.rbSi.Size = new System.Drawing.Size(40, 20);
+            this.rbSi.TabIndex = 110;
+            this.rbSi.TabStop = true;
+            this.rbSi.Text = "Si";
+            this.rbSi.UseVisualStyleBackColor = true;
             // 
-            // comboBox4
+            // cbMaterialPrincipal
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "Activo",
-            "Inactivo"});
-            this.comboBox4.Location = new System.Drawing.Point(175, 322);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(181, 24);
-            this.comboBox4.TabIndex = 109;
+            this.cbMaterialPrincipal.FormattingEnabled = true;
+            this.cbMaterialPrincipal.Items.AddRange(new object[] {
+            "Nomex",
+            "Kevlar",
+            "PBI (Polibenzimidazol)",
+            "Gore-Tex",
+            "Cuero",
+            "Algodón tratado",
+            "Aramida",
+            "Fibra de carbono",
+            "PVC (Cloruro de polivinilo)",
+            "Poliéster",
+            "Silicona"});
+            this.cbMaterialPrincipal.Location = new System.Drawing.Point(112, 367);
+            this.cbMaterialPrincipal.Name = "cbMaterialPrincipal";
+            this.cbMaterialPrincipal.Size = new System.Drawing.Size(241, 24);
+            this.cbMaterialPrincipal.TabIndex = 109;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(14, 322);
+            this.label2.Location = new System.Drawing.Point(11, 367);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(149, 20);
+            this.label2.Size = new System.Drawing.Size(92, 25);
             this.label2.TabIndex = 108;
-            this.label2.Text = "Material Principal :";
+            this.label2.Text = "Material :";
             // 
             // button2
             // 
@@ -200,28 +224,27 @@
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(497, 534);
+            this.button2.Location = new System.Drawing.Point(482, 671);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(158, 42);
             this.button2.TabIndex = 107;
             this.button2.Text = "Limpiar Texto";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // comboBox3
+            // cbTalla
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "Jefe de Bomberos",
-            "Teniente",
-            "Subteniente",
-            "Sargento",
-            "Cabo",
-            "Bombero de Primera",
-            "Bombero Voluntario"});
-            this.comboBox3.Location = new System.Drawing.Point(76, 276);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(168, 24);
-            this.comboBox3.TabIndex = 106;
+            this.cbTalla.FormattingEnabled = true;
+            this.cbTalla.Items.AddRange(new object[] {
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"});
+            this.cbTalla.Location = new System.Drawing.Point(99, 301);
+            this.cbTalla.Name = "cbTalla";
+            this.cbTalla.Size = new System.Drawing.Size(254, 24);
+            this.cbTalla.TabIndex = 106;
             // 
             // btnIngreso
             // 
@@ -229,70 +252,103 @@
             this.btnIngreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(63)))), ((int)(((byte)(95)))));
             this.btnIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIngreso.ForeColor = System.Drawing.Color.White;
-            this.btnIngreso.Location = new System.Drawing.Point(666, 534);
+            this.btnIngreso.Location = new System.Drawing.Point(651, 671);
             this.btnIngreso.Name = "btnIngreso";
             this.btnIngreso.Size = new System.Drawing.Size(141, 42);
             this.btnIngreso.TabIndex = 105;
             this.btnIngreso.Text = "Agregar";
             this.btnIngreso.UseVisualStyleBackColor = false;
+            this.btnIngreso.Click += new System.EventHandler(this.btnIngreso_Click);
             // 
-            // comboBox2
+            // cbEstado
             // 
-            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.cbEstado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Activo",
-            "Inactivo"});
-            this.comboBox2.Location = new System.Drawing.Point(356, 276);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(159, 24);
-            this.comboBox2.TabIndex = 104;
+            this.cbEstado.FormattingEnabled = true;
+            this.cbEstado.Items.AddRange(new object[] {
+            "Nuevo",
+            "Usado"});
+            this.cbEstado.Location = new System.Drawing.Point(518, 505);
+            this.cbEstado.Name = "cbEstado";
+            this.cbEstado.Size = new System.Drawing.Size(249, 24);
+            this.cbEstado.TabIndex = 104;
             // 
-            // textBox7
+            // txtMarca
             // 
-            this.textBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtMarca.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox7.Location = new System.Drawing.Point(553, 371);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(254, 22);
-            this.textBox7.TabIndex = 103;
+            this.txtMarca.Location = new System.Drawing.Point(513, 440);
+            this.txtMarca.Name = "txtMarca";
+            this.txtMarca.Size = new System.Drawing.Size(254, 22);
+            this.txtMarca.TabIndex = 103;
             // 
-            // comboBox1
+            // cbxTipoPrenda
             // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.cbxTipoPrenda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(393, 231);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(138, 24);
-            this.comboBox1.TabIndex = 102;
+            this.cbxTipoPrenda.FormattingEnabled = true;
+            this.cbxTipoPrenda.Items.AddRange(new object[] {
+            "Casco",
+            "",
+            "Chaqueta",
+            "",
+            "Pantalón",
+            "",
+            "Guantes",
+            "",
+            "Botas",
+            "",
+            "Cinturón",
+            "",
+            "Camisa",
+            "",
+            "Polo",
+            "",
+            "Pasamontañas",
+            "",
+            "Peto",
+            "",
+            "Protector de oídos",
+            "",
+            "Chaleco reflectante",
+            "",
+            "Máscara",
+            "",
+            "Monja",
+            "",
+            "Cubrepantalón",
+            "",
+            "Capa impermeable"});
+            this.cbxTipoPrenda.Location = new System.Drawing.Point(181, 506);
+            this.cbxTipoPrenda.Name = "cbxTipoPrenda";
+            this.cbxTipoPrenda.Size = new System.Drawing.Size(172, 24);
+            this.cbxTipoPrenda.TabIndex = 102;
             // 
-            // textBox4
+            // txtCodigoPrenda
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.Location = new System.Drawing.Point(673, 233);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(134, 22);
-            this.textBox4.TabIndex = 101;
+            this.txtCodigoPrenda.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCodigoPrenda.Location = new System.Drawing.Point(563, 233);
+            this.txtCodigoPrenda.Name = "txtCodigoPrenda";
+            this.txtCodigoPrenda.Size = new System.Drawing.Size(191, 22);
+            this.txtCodigoPrenda.TabIndex = 101;
             // 
-            // textBox1
+            // txtNombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(99, 235);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 22);
-            this.textBox1.TabIndex = 100;
+            this.txtNombre.Location = new System.Drawing.Point(112, 237);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(241, 22);
+            this.txtNombre.TabIndex = 100;
             // 
             // label10
             // 
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(385, 326);
+            this.label10.Location = new System.Drawing.Point(402, 367);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(172, 20);
+            this.label10.Size = new System.Drawing.Size(198, 25);
             this.label10.TabIndex = 99;
             this.label10.Text = "Resistencia Al Calor :";
             // 
@@ -301,11 +357,11 @@
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(481, 371);
+            this.label8.Location = new System.Drawing.Point(403, 435);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(66, 20);
+            this.label8.Size = new System.Drawing.Size(78, 25);
             this.label8.TabIndex = 98;
             this.label8.Text = "Marca :";
             // 
@@ -314,11 +370,11 @@
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(279, 280);
+            this.label7.Location = new System.Drawing.Point(403, 504);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 20);
+            this.label7.Size = new System.Drawing.Size(84, 25);
             this.label7.TabIndex = 97;
             this.label7.Text = "Estado :";
             // 
@@ -327,11 +383,11 @@
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(241, 235);
+            this.label6.Location = new System.Drawing.Point(11, 505);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(136, 20);
+            this.label6.Size = new System.Drawing.Size(160, 25);
             this.label6.TabIndex = 96;
             this.label6.Text = "Tipo De Prenda :";
             // 
@@ -339,33 +395,33 @@
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(538, 233);
+            this.label5.Location = new System.Drawing.Point(389, 228);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(129, 20);
+            this.label5.Size = new System.Drawing.Size(154, 25);
             this.label5.TabIndex = 95;
             this.label5.Text = "Codigo Prenda :";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(15, 278);
+            this.label4.Location = new System.Drawing.Point(15, 301);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 20);
+            this.label4.Size = new System.Drawing.Size(66, 25);
             this.label4.TabIndex = 94;
             this.label4.Text = "Talla :";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(15, 235);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 20);
+            this.label3.Size = new System.Drawing.Size(115, 31);
             this.label3.TabIndex = 93;
             this.label3.Text = "Nombre :";
             // 
@@ -407,44 +463,30 @@
             this.pictureBox1.TabIndex = 90;
             this.pictureBox1.TabStop = false;
             // 
-            // btnClose
-            // 
-            this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.ForeColor = System.Drawing.Color.Transparent;
-            this.btnClose.Image = global::CapaDiseño.Properties.Resources.Icono_cerrar_FN;
-            this.btnClose.Location = new System.Drawing.Point(773, 0);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(49, 49);
-            this.btnClose.TabIndex = 9;
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
             // AltaPrenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(822, 789);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtModelo);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtCodigoBombero);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpFechaAdquisicion);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.rbSi);
+            this.Controls.Add(this.cbMaterialPrincipal);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.cbTalla);
             this.Controls.Add(this.btnIngreso);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cbEstado);
+            this.Controls.Add(this.txtMarca);
+            this.Controls.Add(this.cbxTipoPrenda);
+            this.Controls.Add(this.txtCodigoPrenda);
+            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -472,24 +514,24 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtModelo;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCodigoBombero;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpFechaAdquisicion;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.RadioButton rbSi;
+        private System.Windows.Forms.ComboBox cbMaterialPrincipal;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cbTalla;
         private System.Windows.Forms.Button btnIngreso;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox cbEstado;
+        private System.Windows.Forms.TextBox txtMarca;
+        private System.Windows.Forms.ComboBox cbxTipoPrenda;
+        private System.Windows.Forms.TextBox txtCodigoPrenda;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;

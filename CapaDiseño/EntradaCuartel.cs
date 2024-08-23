@@ -64,5 +64,10 @@ namespace CapaDiseño
                 MessageBox.Show("Por favor, ingrese un código de bombero válido.");
             }
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

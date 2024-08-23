@@ -38,13 +38,13 @@ namespace CapaDiseño
         }
         private void ConfigurarMenuSegunJerarquia()
         {
-            if (jerarquia == "Jefe")
+            if (jerarquia == "Jefe de Bomberos")
             {
                 diseño(); // Mostrar todo
                 hideSubMenu();
                 
             }
-            else if (jerarquia == "Suboficial")
+            else if (jerarquia == "Teniente")
             {
                 // Ocultar opciones de menú específicas para Suboficial
                 panelPersonal.Visible = false;
@@ -399,6 +399,11 @@ namespace CapaDiseño
         private void button2_Click_3(object sender, EventArgs e)
         {
             openChildForm(new ModificarTareas());
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

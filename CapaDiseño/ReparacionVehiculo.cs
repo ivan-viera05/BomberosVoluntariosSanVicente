@@ -26,5 +26,15 @@ namespace CapaDiseño
         {
             this.Close();
         }
+
+        private void btnIngreso_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

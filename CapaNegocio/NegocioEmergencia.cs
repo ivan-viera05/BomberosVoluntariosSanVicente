@@ -1,8 +1,10 @@
 ﻿using CapaDato;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace CapaNegocio
@@ -28,6 +30,17 @@ namespace CapaNegocio
         public bool ValidarExistenciaBombero(int bomberoID)
         {
             return emergencia.ExisteBombero(bomberoID);
+        }
+        public DataTable ObtenerEmergencias()
+        {
+            try
+            {
+                return emergencia.ObtenerTareas();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al obtener las tareas.", ex);
+            }
         }
     }
 }

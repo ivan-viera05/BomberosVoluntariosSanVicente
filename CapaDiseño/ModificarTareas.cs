@@ -129,5 +129,10 @@ namespace CapaDiseño
             txtCodigoBombero.Clear();
         
     }
+
+        private void txtCodigoBombero_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

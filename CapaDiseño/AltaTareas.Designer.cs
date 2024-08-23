@@ -124,7 +124,7 @@
             this.btnAgregarBombero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(63)))), ((int)(((byte)(95)))));
             this.btnAgregarBombero.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarBombero.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarBombero.Location = new System.Drawing.Point(426, 250);
+            this.btnAgregarBombero.Location = new System.Drawing.Point(497, 250);
             this.btnAgregarBombero.Name = "btnAgregarBombero";
             this.btnAgregarBombero.Size = new System.Drawing.Size(97, 38);
             this.btnAgregarBombero.TabIndex = 72;
@@ -137,11 +137,11 @@
             this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(22, 295);
+            this.label12.Location = new System.Drawing.Point(12, 333);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(222, 20);
+            this.label12.Size = new System.Drawing.Size(258, 25);
             this.label12.TabIndex = 76;
             this.label12.Text = "Bomberos Que Participaron:";
             // 
@@ -151,9 +151,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listBoxBomberos.FormattingEnabled = true;
             this.listBoxBomberos.ItemHeight = 16;
-            this.listBoxBomberos.Location = new System.Drawing.Point(275, 297);
+            this.listBoxBomberos.Location = new System.Drawing.Point(276, 333);
             this.listBoxBomberos.Name = "listBoxBomberos";
-            this.listBoxBomberos.Size = new System.Drawing.Size(490, 84);
+            this.listBoxBomberos.Size = new System.Drawing.Size(131, 36);
             this.listBoxBomberos.TabIndex = 75;
             // 
             // label4
@@ -161,11 +161,11 @@
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(22, 259);
+            this.label4.Location = new System.Drawing.Point(12, 263);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(226, 20);
+            this.label4.Size = new System.Drawing.Size(265, 25);
             this.label4.TabIndex = 74;
             this.label4.Text = "Ingrese Codigo De Bombero:";
             // 
@@ -173,19 +173,19 @@
             // 
             this.txtCodigoBombero.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCodigoBombero.Location = new System.Drawing.Point(275, 259);
+            this.txtCodigoBombero.Location = new System.Drawing.Point(298, 266);
             this.txtCodigoBombero.Name = "txtCodigoBombero";
-            this.txtCodigoBombero.Size = new System.Drawing.Size(127, 22);
+            this.txtCodigoBombero.Size = new System.Drawing.Size(181, 22);
             this.txtCodigoBombero.TabIndex = 73;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(22, 399);
+            this.label8.Location = new System.Drawing.Point(12, 421);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(181, 20);
+            this.label8.Size = new System.Drawing.Size(210, 25);
             this.label8.TabIndex = 78;
             this.label8.Text = "Descripcion del hecho:";
             this.label8.Click += new System.EventHandler(this.label8_Click);
@@ -194,20 +194,20 @@
             // 
             this.txtDescripcionHecho.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDescripcionHecho.Location = new System.Drawing.Point(237, 399);
+            this.txtDescripcionHecho.Location = new System.Drawing.Point(242, 421);
             this.txtDescripcionHecho.Name = "txtDescripcionHecho";
-            this.txtDescripcionHecho.Size = new System.Drawing.Size(528, 22);
+            this.txtDescripcionHecho.Size = new System.Drawing.Size(560, 22);
             this.txtDescripcionHecho.TabIndex = 77;
             this.txtDescripcionHecho.TextChanged += new System.EventHandler(this.txtDescripcionHecho_TextChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(22, 449);
+            this.label5.Location = new System.Drawing.Point(434, 333);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(132, 20);
+            this.label5.Size = new System.Drawing.Size(155, 25);
             this.label5.TabIndex = 79;
             this.label5.Text = "Estado de tarea:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -219,57 +219,57 @@
             "Pendiente",
             "En progreso",
             "Completada"});
-            this.cmbEstadoTarea.Location = new System.Drawing.Point(188, 449);
+            this.cmbEstadoTarea.Location = new System.Drawing.Point(624, 337);
             this.cmbEstadoTarea.Name = "cmbEstadoTarea";
-            this.cmbEstadoTarea.Size = new System.Drawing.Size(299, 24);
+            this.cmbEstadoTarea.Size = new System.Drawing.Size(178, 24);
             this.cmbEstadoTarea.TabIndex = 80;
             this.cmbEstadoTarea.SelectedIndexChanged += new System.EventHandler(this.cmbEstadoTarea_SelectedIndexChanged);
             // 
             // dtpFechaAsignacion
             // 
-            this.dtpFechaAsignacion.Location = new System.Drawing.Point(188, 499);
+            this.dtpFechaAsignacion.Location = new System.Drawing.Point(216, 497);
             this.dtpFechaAsignacion.Name = "dtpFechaAsignacion";
-            this.dtpFechaAsignacion.Size = new System.Drawing.Size(299, 22);
+            this.dtpFechaAsignacion.Size = new System.Drawing.Size(586, 22);
             this.dtpFechaAsignacion.TabIndex = 81;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(22, 499);
+            this.label6.Location = new System.Drawing.Point(12, 495);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(147, 20);
+            this.label6.Size = new System.Drawing.Size(175, 25);
             this.label6.TabIndex = 82;
             this.label6.Text = "Fecha Asignacion:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(22, 553);
+            this.label7.Location = new System.Drawing.Point(12, 579);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(154, 20);
+            this.label7.Size = new System.Drawing.Size(181, 25);
             this.label7.TabIndex = 83;
             this.label7.Text = "Fecha Finalizacion:";
             // 
             // dtpFechaFinalizacion
             // 
-            this.dtpFechaFinalizacion.Location = new System.Drawing.Point(188, 551);
+            this.dtpFechaFinalizacion.Location = new System.Drawing.Point(216, 582);
             this.dtpFechaFinalizacion.Name = "dtpFechaFinalizacion";
-            this.dtpFechaFinalizacion.Size = new System.Drawing.Size(299, 22);
+            this.dtpFechaFinalizacion.Size = new System.Drawing.Size(586, 22);
             this.dtpFechaFinalizacion.TabIndex = 84;
             // 
             // btnAgregarTarea
             // 
             this.btnAgregarTarea.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAgregarTarea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(63)))), ((int)(((byte)(95)))));
-            this.btnAgregarTarea.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarTarea.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarTarea.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarTarea.Location = new System.Drawing.Point(624, 582);
+            this.btnAgregarTarea.Location = new System.Drawing.Point(661, 715);
             this.btnAgregarTarea.Name = "btnAgregarTarea";
-            this.btnAgregarTarea.Size = new System.Drawing.Size(141, 35);
+            this.btnAgregarTarea.Size = new System.Drawing.Size(141, 39);
             this.btnAgregarTarea.TabIndex = 85;
             this.btnAgregarTarea.Text = "Agregar";
             this.btnAgregarTarea.UseVisualStyleBackColor = false;
@@ -290,11 +290,11 @@
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(23, 209);
+            this.label9.Location = new System.Drawing.Point(12, 209);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(284, 20);
+            this.label9.Size = new System.Drawing.Size(333, 25);
             this.label9.TabIndex = 87;
             this.label9.Text = "Ingrese Codigo De Bombero Acargo:";
             // 
@@ -302,9 +302,9 @@
             // 
             this.txtCodigoBomberoAcargo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCodigoBomberoAcargo.Location = new System.Drawing.Point(329, 209);
+            this.txtCodigoBomberoAcargo.Location = new System.Drawing.Point(368, 209);
             this.txtCodigoBomberoAcargo.Name = "txtCodigoBomberoAcargo";
-            this.txtCodigoBomberoAcargo.Size = new System.Drawing.Size(127, 22);
+            this.txtCodigoBomberoAcargo.Size = new System.Drawing.Size(226, 22);
             this.txtCodigoBomberoAcargo.TabIndex = 86;
             // 
             // AltaTareas

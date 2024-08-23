@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaNegocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace CapaDiseño
 {
     public partial class PlanillaInventario : Form
     {
+        private NegocioInventario negocio = new NegocioInventario();
         public PlanillaInventario()
         {
             InitializeComponent();
@@ -20,6 +22,11 @@ namespace CapaDiseño
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void PlanillaInventario_Load(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource= negocio.ObtenerHerramientas();
         }
     }
 }

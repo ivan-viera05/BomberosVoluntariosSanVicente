@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -51,6 +52,27 @@ namespace CapaDato
                 cmd.Parameters.AddWithValue("@EmergenciaID", emergenciaID);
                 cmd.Parameters.AddWithValue("@CodigoBombero", bomberoID);
                 cmd.ExecuteNonQuery();
+            }
+        }
+
+        public DataTable ObtenerTareas()
+        {
+            try
+            {
+                string query = "SELECT * FROM Emergencias";
+                using (SqlCommand cmd = new SqlCommand(query, Conexion.conectar()))
+                {
+                    using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                    {
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+                        return dt;
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception("Error al obtener las tareas de la base de datos.", ex);
             }
         }
 

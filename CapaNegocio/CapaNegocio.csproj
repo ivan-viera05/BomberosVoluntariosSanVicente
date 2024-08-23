@@ -131,9 +131,12 @@
     <Compile Include="Conexion.cs" />
     <Compile Include="NegocioAsistencia.cs" />
     <Compile Include="NegocioEmergencia.cs" />
+    <Compile Include="NegocioInventario.cs" />
     <Compile Include="NegocioPersonal.cs" />
     <Compile Include="NegocioReportes.cs" />
+    <Compile Include="NegocioRopero.cs" />
     <Compile Include="NegocioTareas.cs" />
+    <Compile Include="NegocioVehiculo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

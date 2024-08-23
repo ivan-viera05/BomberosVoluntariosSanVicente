@@ -88,11 +88,11 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(298, 129);
+            this.label11.Location = new System.Drawing.Point(373, 129);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(358, 29);
+            this.label11.Size = new System.Drawing.Size(234, 29);
             this.label11.TabIndex = 53;
-            this.label11.Text = "PLANILLA BAJA DE ROPERO";
+            this.label11.Text = "BAJA DE ROPERO";
             // 
             // label12
             // 
@@ -135,11 +135,11 @@
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(531, 227);
+            this.button2.Location = new System.Drawing.Point(502, 227);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(125, 42);
+            this.button2.Size = new System.Drawing.Size(154, 42);
             this.button2.TabIndex = 104;
             this.button2.Text = "Limpiar Texto";
             this.button2.UseVisualStyleBackColor = false;
@@ -148,7 +148,7 @@
             // 
             this.btnIngreso.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnIngreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(63)))), ((int)(((byte)(95)))));
-            this.btnIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIngreso.ForeColor = System.Drawing.Color.White;
             this.btnIngreso.Location = new System.Drawing.Point(667, 227);
             this.btnIngreso.Name = "btnIngreso";
@@ -159,7 +159,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(160, 238);
+            this.textBox4.Location = new System.Drawing.Point(197, 242);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(198, 22);
             this.textBox4.TabIndex = 98;
@@ -167,11 +167,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(25, 238);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(129, 20);
+            this.label5.Size = new System.Drawing.Size(193, 31);
             this.label5.TabIndex = 92;
             this.label5.Text = "Codigo Prenda :";
             // 

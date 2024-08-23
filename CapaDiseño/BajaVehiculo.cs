@@ -26,5 +26,10 @@ namespace CapaDiseño
         {
 
         }
+
+        private void BajaVehiculo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

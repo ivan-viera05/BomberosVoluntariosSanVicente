@@ -137,20 +137,20 @@
             // 
             this.lblFechaHora.AutoSize = true;
             this.lblFechaHora.BackColor = System.Drawing.Color.Transparent;
-            this.lblFechaHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFechaHora.Location = new System.Drawing.Point(635, 50);
+            this.lblFechaHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaHora.Location = new System.Drawing.Point(768, 38);
             this.lblFechaHora.Name = "lblFechaHora";
-            this.lblFechaHora.Size = new System.Drawing.Size(0, 20);
+            this.lblFechaHora.Size = new System.Drawing.Size(0, 25);
             this.lblFechaHora.TabIndex = 28;
             // 
             // label4
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(417, 50);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(520, 44);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(198, 20);
+            this.label4.Size = new System.Drawing.Size(232, 25);
             this.label4.TabIndex = 26;
             this.label4.Text = "Fecha y hora del ingreso:";
             // 
@@ -158,18 +158,19 @@
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 47);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(21, 46);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(226, 20);
+            this.label3.Size = new System.Drawing.Size(265, 25);
             this.label3.TabIndex = 25;
             this.label3.Text = "Ingrese Codigo De Bombero:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtCodigoBomberoIngreso
             // 
-            this.txtCodigoBomberoIngreso.Location = new System.Drawing.Point(258, 44);
+            this.txtCodigoBomberoIngreso.Location = new System.Drawing.Point(309, 45);
             this.txtCodigoBomberoIngreso.Name = "txtCodigoBomberoIngreso";
-            this.txtCodigoBomberoIngreso.Size = new System.Drawing.Size(115, 26);
+            this.txtCodigoBomberoIngreso.Size = new System.Drawing.Size(147, 26);
             this.txtCodigoBomberoIngreso.TabIndex = 0;
             // 
             // btnIngreso

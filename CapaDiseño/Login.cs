@@ -114,5 +114,15 @@ namespace CapaDiseño
 
            
         }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnClose_Click_2(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

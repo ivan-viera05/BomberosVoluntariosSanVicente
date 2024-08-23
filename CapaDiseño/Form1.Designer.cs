@@ -67,7 +67,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1155, 73);
+            this.panel1.Size = new System.Drawing.Size(1561, 79);
             this.panel1.TabIndex = 12;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove_1);
@@ -95,9 +95,9 @@
             this.btnRestaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRestaurar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnRestaurar.Image = global::CapaDiseño.Properties.Resources.Icono_Restaurar;
-            this.btnRestaurar.Location = new System.Drawing.Point(911, 0);
+            this.btnRestaurar.Location = new System.Drawing.Point(1317, 0);
             this.btnRestaurar.Name = "btnRestaurar";
-            this.btnRestaurar.Size = new System.Drawing.Size(61, 73);
+            this.btnRestaurar.Size = new System.Drawing.Size(61, 79);
             this.btnRestaurar.TabIndex = 5;
             this.btnRestaurar.UseVisualStyleBackColor = false;
             this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
@@ -113,9 +113,9 @@
             this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimizar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnMinimizar.Image = global::CapaDiseño.Properties.Resources.Icono_Minimizar;
-            this.btnMinimizar.Location = new System.Drawing.Point(972, 0);
+            this.btnMinimizar.Location = new System.Drawing.Point(1378, 0);
             this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(61, 73);
+            this.btnMinimizar.Size = new System.Drawing.Size(61, 79);
             this.btnMinimizar.TabIndex = 4;
             this.btnMinimizar.UseVisualStyleBackColor = false;
             this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
@@ -131,9 +131,9 @@
             this.btnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMaximizar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnMaximizar.Image = global::CapaDiseño.Properties.Resources.Icono_Maximizar;
-            this.btnMaximizar.Location = new System.Drawing.Point(1033, 0);
+            this.btnMaximizar.Location = new System.Drawing.Point(1439, 0);
             this.btnMaximizar.Name = "btnMaximizar";
-            this.btnMaximizar.Size = new System.Drawing.Size(61, 73);
+            this.btnMaximizar.Size = new System.Drawing.Size(61, 79);
             this.btnMaximizar.TabIndex = 3;
             this.btnMaximizar.UseVisualStyleBackColor = false;
             this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
@@ -149,9 +149,9 @@
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.ForeColor = System.Drawing.SystemColors.Control;
             this.btnClose.Image = global::CapaDiseño.Properties.Resources.Icono_cerrar_FN;
-            this.btnClose.Location = new System.Drawing.Point(1094, 0);
+            this.btnClose.Location = new System.Drawing.Point(1500, 0);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(61, 73);
+            this.btnClose.Size = new System.Drawing.Size(61, 79);
             this.btnClose.TabIndex = 2;
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
@@ -163,7 +163,7 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(118, 73);
+            this.pictureBox1.Size = new System.Drawing.Size(118, 79);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -176,6 +176,9 @@
             // 
             // panelForms
             // 
+            this.panelForms.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelForms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.panelForms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelForms.Controls.Add(this.label5);
@@ -187,10 +190,9 @@
             this.panelForms.Controls.Add(this.btnIngreso);
             this.panelForms.Controls.Add(this.lblHora);
             this.panelForms.Controls.Add(this.pictureBox2);
-            this.panelForms.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelForms.Location = new System.Drawing.Point(0, 73);
+            this.panelForms.Location = new System.Drawing.Point(0, 79);
             this.panelForms.Name = "panelForms";
-            this.panelForms.Size = new System.Drawing.Size(1155, 611);
+            this.panelForms.Size = new System.Drawing.Size(1561, 915);
             this.panelForms.TabIndex = 13;
             this.panelForms.Paint += new System.Windows.Forms.PaintEventHandler(this.panelForms_Paint);
             // 
@@ -214,7 +216,7 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(63)))), ((int)(((byte)(95)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(782, 249);
+            this.button1.Location = new System.Drawing.Point(1188, 249);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(330, 52);
             this.button1.TabIndex = 27;
@@ -228,7 +230,7 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.button2);
-            this.panel2.Location = new System.Drawing.Point(779, 488);
+            this.panel2.Location = new System.Drawing.Point(1185, 488);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(343, 62);
             this.panel2.TabIndex = 25;
@@ -253,7 +255,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Rockwell", 15F);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(776, 456);
+            this.label3.Location = new System.Drawing.Point(1182, 456);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(350, 29);
             this.label3.TabIndex = 24;
@@ -267,7 +269,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Rockwell", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(777, 331);
+            this.label2.Location = new System.Drawing.Point(1183, 331);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(335, 29);
             this.label2.TabIndex = 20;
@@ -279,7 +281,7 @@
             this.btnSalida.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(63)))), ((int)(((byte)(95)))));
             this.btnSalida.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalida.ForeColor = System.Drawing.Color.White;
-            this.btnSalida.Location = new System.Drawing.Point(980, 363);
+            this.btnSalida.Location = new System.Drawing.Point(1386, 363);
             this.btnSalida.Name = "btnSalida";
             this.btnSalida.Size = new System.Drawing.Size(137, 52);
             this.btnSalida.TabIndex = 19;
@@ -293,7 +295,7 @@
             this.btnIngreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(63)))), ((int)(((byte)(95)))));
             this.btnIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIngreso.ForeColor = System.Drawing.Color.White;
-            this.btnIngreso.Location = new System.Drawing.Point(782, 363);
+            this.btnIngreso.Location = new System.Drawing.Point(1188, 363);
             this.btnIngreso.Name = "btnIngreso";
             this.btnIngreso.Size = new System.Drawing.Size(145, 52);
             this.btnIngreso.TabIndex = 18;
@@ -317,9 +319,9 @@
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Location = new System.Drawing.Point(-11, 249);
+            this.pictureBox2.Location = new System.Drawing.Point(19, 291);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(731, 362);
+            this.pictureBox2.Size = new System.Drawing.Size(1163, 612);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 29;
             this.pictureBox2.TabStop = false;
@@ -330,7 +332,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1155, 684);
+            this.ClientSize = new System.Drawing.Size(1561, 993);
             this.Controls.Add(this.panelForms);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

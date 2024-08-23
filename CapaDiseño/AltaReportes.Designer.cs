@@ -67,7 +67,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(-402, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 31);
+            this.label1.Size = new System.Drawing.Size(0, 25);
             this.label1.TabIndex = 22;
             // 
             // btnClose
@@ -125,22 +125,22 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(45, 286);
+            this.label5.Location = new System.Drawing.Point(45, 314);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(136, 20);
+            this.label5.Size = new System.Drawing.Size(160, 25);
             this.label5.TabIndex = 81;
             this.label5.Text = "Tipo de reportes:";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(45, 331);
+            this.label8.Location = new System.Drawing.Point(44, 383);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(189, 20);
+            this.label8.Size = new System.Drawing.Size(217, 25);
             this.label8.TabIndex = 84;
             this.label8.Text = "Descripcion del reporte:";
             // 
@@ -148,7 +148,7 @@
             // 
             this.txtDescripcion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDescripcion.Location = new System.Drawing.Point(265, 329);
+            this.txtDescripcion.Location = new System.Drawing.Point(265, 383);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(517, 22);
             this.txtDescripcion.TabIndex = 83;
@@ -157,17 +157,17 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(45, 370);
+            this.label6.Location = new System.Drawing.Point(45, 453);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(124, 20);
+            this.label6.Size = new System.Drawing.Size(146, 25);
             this.label6.TabIndex = 86;
             this.label6.Text = "Fecha Reporte:";
             // 
             // dtpFechaReporte
             // 
-            this.dtpFechaReporte.Location = new System.Drawing.Point(211, 370);
+            this.dtpFechaReporte.Location = new System.Drawing.Point(211, 453);
             this.dtpFechaReporte.Name = "dtpFechaReporte";
             this.dtpFechaReporte.Size = new System.Drawing.Size(571, 22);
             this.dtpFechaReporte.TabIndex = 85;
@@ -176,11 +176,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(45, 412);
+            this.label4.Location = new System.Drawing.Point(45, 524);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(126, 20);
+            this.label4.Size = new System.Drawing.Size(150, 25);
             this.label4.TabIndex = 88;
             this.label4.Text = "Observaciones:";
             // 
@@ -188,7 +188,7 @@
             // 
             this.txtObservaciones.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtObservaciones.Location = new System.Drawing.Point(211, 412);
+            this.txtObservaciones.Location = new System.Drawing.Point(211, 524);
             this.txtObservaciones.Name = "txtObservaciones";
             this.txtObservaciones.Size = new System.Drawing.Size(571, 22);
             this.txtObservaciones.TabIndex = 87;
@@ -199,7 +199,7 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(63)))), ((int)(((byte)(95)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(631, 504);
+            this.button1.Location = new System.Drawing.Point(641, 644);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(141, 34);
             this.button1.TabIndex = 89;
@@ -211,28 +211,28 @@
             // 
             this.txtTipoReporte.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTipoReporte.Location = new System.Drawing.Point(202, 286);
+            this.txtTipoReporte.Location = new System.Drawing.Point(211, 318);
             this.txtTipoReporte.Name = "txtTipoReporte";
-            this.txtTipoReporte.Size = new System.Drawing.Size(580, 22);
+            this.txtTipoReporte.Size = new System.Drawing.Size(571, 22);
             this.txtTipoReporte.TabIndex = 90;
             // 
             // txtCodigoBombero
             // 
             this.txtCodigoBombero.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCodigoBombero.Location = new System.Drawing.Point(371, 247);
+            this.txtCodigoBombero.Location = new System.Drawing.Point(414, 253);
             this.txtCodigoBombero.Name = "txtCodigoBombero";
-            this.txtCodigoBombero.Size = new System.Drawing.Size(411, 22);
+            this.txtCodigoBombero.Size = new System.Drawing.Size(368, 22);
             this.txtCodigoBombero.TabIndex = 92;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(45, 249);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(292, 20);
+            this.label7.Size = new System.Drawing.Size(425, 31);
             this.label7.TabIndex = 91;
             this.label7.Text = "Codigo Bombero Acargo Del Reporte:";
             // 

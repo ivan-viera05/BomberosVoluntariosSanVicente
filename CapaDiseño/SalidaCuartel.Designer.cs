@@ -101,7 +101,7 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtCodigoBomberoSalida);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(70, 220);
             this.groupBox1.Name = "groupBox1";
@@ -128,20 +128,20 @@
             // 
             this.lblFechaHoraSalida.AutoSize = true;
             this.lblFechaHoraSalida.BackColor = System.Drawing.Color.Transparent;
-            this.lblFechaHoraSalida.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFechaHoraSalida.Location = new System.Drawing.Point(635, 50);
+            this.lblFechaHoraSalida.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaHoraSalida.Location = new System.Drawing.Point(763, 56);
             this.lblFechaHoraSalida.Name = "lblFechaHoraSalida";
-            this.lblFechaHoraSalida.Size = new System.Drawing.Size(0, 20);
+            this.lblFechaHoraSalida.Size = new System.Drawing.Size(0, 25);
             this.lblFechaHoraSalida.TabIndex = 28;
             // 
             // label4
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(417, 50);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(509, 52);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(185, 20);
+            this.label4.Size = new System.Drawing.Size(219, 25);
             this.label4.TabIndex = 26;
             this.label4.Text = "Fecha y hora de Salida:";
             // 
@@ -149,18 +149,18 @@
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 47);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(31, 52);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(226, 20);
+            this.label3.Size = new System.Drawing.Size(265, 25);
             this.label3.TabIndex = 25;
             this.label3.Text = "Ingrese Codigo De Bombero:";
             // 
             // txtCodigoBomberoSalida
             // 
-            this.txtCodigoBomberoSalida.Location = new System.Drawing.Point(258, 44);
+            this.txtCodigoBomberoSalida.Location = new System.Drawing.Point(316, 50);
             this.txtCodigoBomberoSalida.Name = "txtCodigoBomberoSalida";
-            this.txtCodigoBomberoSalida.Size = new System.Drawing.Size(115, 26);
+            this.txtCodigoBomberoSalida.Size = new System.Drawing.Size(144, 30);
             this.txtCodigoBomberoSalida.TabIndex = 0;
             // 
             // txtCodigoBombero

@@ -21,5 +21,10 @@ namespace CapaDiseño
         {
             this.Close();
         }
+
+        private void btnIngreso_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
